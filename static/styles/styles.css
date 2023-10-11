@@ -1,0 +1,328 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* border: .5px dotted yellowgreen; */
+}
+body{
+    font-family: sans-serif;
+    background:  linear-gradient(130deg, rgba(242,216,242,1) 10%, rgba(139,99,166,1) 50%, rgba(85,3,140,1) 100%);
+    background-size: 250%;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #F2D8F2;
+}
+.header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    padding: 0 8px 0 8px;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
+.header nav ul {
+    width: 30%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.header nav div {
+    margin-right: 60px;
+    padding: 10px 20px;
+    background: linear-gradient(100deg, #00d2ef, #3b9af2);
+    /* border-color: #3b9af2; */
+    border-color: #333d78;
+    color: #333d78;
+    border-radius: 100px;
+}
+.figure{
+    padding: 8px;
+    margin-left: 65px;
+}
+.figure a{
+    display: block;
+}
+.figure a img{
+    height: 90px;
+}
+li{
+    margin: 5px;
+}
+.section--hero{
+    display: flex;
+    padding-top: 122px;
+    
+    /*
+    background: linear-gradient(130deg, rgba(242,216,242,1) 10%, rgba(139,99,166,1) 50%, rgba(85,3,140,1) 100%);
+    background-size: 300%
+    */
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+ 
+    50% {
+        background-position: 100% 50%;
+    }
+ 
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.section--hero div{
+    width: 40%;
+    padding: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section--hero div figure{
+    text-align: center;
+}
+.section--hero div figure img{
+    width: 100%;
+}
+.section--hero article{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section--hero article header{
+    padding: 20px
+}
+.section--hero article header hgroup{
+    margin: 20px;
+
+}
+.section--hero article header hgroup h1{
+    font-family: sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+.section--hero article header ul{
+    list-style-image: url(../assets/check-mark.png);
+    list-style-position: inside;
+    margin: 20px;
+    padding-left: 60px;
+}
+.section--hero article header ul li{
+    margin: 10px;
+    padding: 10px;
+}
+.section--hero article footer{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.section--hero article footer div {
+    text-align: center;
+    padding: 10px 20px;
+    background: linear-gradient(100deg, #00d2ef, #3b9af2);
+    border-color: #333d78;
+    color: #333d78;
+    border-radius: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+.section--hook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section--hook article{
+    margin: 10px;
+    padding: 15px;
+    width: 100%;
+}
+.section--hook header{
+    font-size: 35px;
+    margin: 30px 20px 20px 20px;
+    padding: 15px;
+    text-align: center;
+}
+.section--hook__ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.section--hook__ul li{
+    width: 360px;
+}
+.section--hook__ul li h2{
+    text-align: center;
+    padding: 20px 0px;
+}
+.section--services {
+    margin: 30px;
+}
+.section--services header h1{
+    padding: 30px;
+    font-size: 40px;
+    text-align: center; 
+}
+.services {
+    margin: 30px;
+    padding:20px;
+}
+.services--gig{
+    display: flex;
+    margin: 35px 0;
+    padding: 35px 0;
+}
+.services--gig__img{
+    align-items: center;
+    justify-content: center;
+}
+.services--gig__img img{
+    height: 360px;
+}
+.services--gig div{
+    display: flex;
+    width: 50%;
+}
+.services--gig__des{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+}
+.services--gig__des h3 {
+    padding: 40px 20px;
+    font-size: 30px;
+}
+.services--gig__des ul {
+    padding: 20px;
+    width: 100%;
+    font-size: 20px;
+    list-style: none;
+}
+.section--callToAction {
+    display: flex;
+    justify-content: center;
+}
+.section--callToAction__img {
+    background: linear-gradient(180deg, rgba(160,175,172,1) 0%, rgba(188,196,197,1) 30%, rgba(201,205,208,1) 100%);;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.section--callToAction__img img{
+    height: 700px
+}
+.section--callToAction__button{
+    width:400px;
+    position: absolute;
+    margin-top: 140px;
+    text-align: center;
+    padding: 10px 20px;
+    background: linear-gradient(100deg, #00d2ef, #3b9af2);
+    border-color: #333d78;
+    color: #333d78;
+    border-radius: 100px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+footer {
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 1050px) {
+    .services--gig__img img {
+        height: 280px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .services--gig {
+        flex-direction: column;
+    }
+    .services--gig div {
+        width: 100%;
+    }
+    .services--gig.first {
+        flex-direction: column-reverse;
+    }
+    .section--hero {
+        flex-direction: column;
+    }
+    .section--hero div {
+        width: auto;
+    }
+    .section--hero article {
+        width: auto;
+    }
+    .section--hook__ul {
+        flex-direction: column;
+        justify-content: center
+    }
+    .section--hook__ul li {
+        width: unset;
+    }
+}
+@media screen and (max-width: 760px) {
+    .figure {
+        margin-left: 30px;
+    }
+    .figure a img {
+        height: 50px;
+    }
+    .header nav {
+        width: unset;
+        margin-right: 40px;
+    }
+    .header nav div {
+        margin-right: unset;
+    }
+    .header nav ul {
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .services {
+        margin: 0;
+        padding: 0;
+    }
+    .services--gig__img img {
+        height: 200px;
+    }
+    .services--gig__des {
+        padding: 0;
+    }
+    .services--gig__des ul {
+        font-size: 16px;
+        text-align: center;
+    }
+    .section--callToAction__img {
+        width: unset;
+    }
+    .section--callToAction__img img {
+        height: 500px
+    }
+    .section--callToAction__button {
+        width: 250px;
+        margin-top: 100px;
+        padding: 5px 20px;
+    }
+}
